@@ -1,0 +1,628 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <title>OneShot - Delta Force Mobile Hack</title>
+    <link rel="icon" type="image/svg+xml"
+        href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA2NCA2NCI+CiAgPGNpcmNsZSBjeD0iMzIiIGN5PSIzMiIgcj0iMzIiIGZpbGw9IiMxZjIzMWQiLz4KICA8cmVjdCB4PSIyNiIgeT0iNDgiIHdpZHRoPSIxMiIgaGVpZ2h0PSI4IiByeD0iNCIgZmlsbD0iI2YwZGZjMCIvPgogIDxlbGxpcHNlIGN4PSIzMiIgY3k9IjQwIiByeD0iMTYiIHJ5PSIxNCIgZmlsbD0iI2YwZGZjMCIvPgogIDxlbGxpcHNlIGN4PSIxNiIgY3k9IjQwIiByeD0iNCIgcnk9IjUiIGZpbGw9IiNlMGNkYjAiLz4KICA8ZWxsaXBzZSBjeD0iNDgiIGN5PSI0MCIgcng9IjQiIHJ5PSI1IiBmaWxsPSIjZTBjZGIwIi8+CiAgPGVsbGlwc2UgY3g9IjMyIiBjeT0iMjciIHJ4PSIxOCIgcnk9IjE1IiBmaWxsPSIjNWE2YjQ4Ii8+CiAgPHJlY3QgeD0iMjIiIHk9IjEzIiB3aWR0aD0iNiIgaGVpZ2h0PSI1IiByeD0iMiIgZmlsbD0iIzRhNWEzYSIvPgogIDxyZWN0IHg9IjM2IiB5PSIxMyIgd2lkdGg9IjYiIGhlaWdodD0iNSIgcng9IjIiIGZpbGw9IiM0YTVhM2EiLz4KICA8cmVjdCB4PSIyOCIgeT0iMTEiIHdpZHRoPSI4IiBoZWlnaHQ9IjUiIHJ4PSIyIiBmaWxsPSIjNGE1YTNhIi8+CiAgPHJlY3QgeD0iMTMiIHk9IjMwIiB3aWR0aD0iMzgiIGhlaWdodD0iNiIgcng9IjMiIGZpbGw9IiM0YTVhM2EiLz4KICA8ZWxsaXBzZSBjeD0iMTUiIGN5PSIzNSIgcng9IjUiIHJ5PSI2IiBmaWxsPSIjM2E0YTJlIi8+CiAgPGVsbGlwc2UgY3g9IjQ5IiBjeT0iMzUiIHJ4PSI1IiByeT0iNiIgZmlsbD0iIzNhNGEyZSIvPgogIDxlbGxpcHNlIGN4PSIxNSIgY3k9IjM1IiByeD0iMyIgcnk9IjQiIGZpbGw9IiMyYTM4MjAiLz4KICA8ZWxsaXBzZSBjeD0iNDkiIGN5PSIzNSIgcng9IjMiIHJ5PSI0IiBmaWxsPSIjMmEzODIwIi8+CiAgPHJlY3QgeD0iMTYiIHk9IjM0IiB3aWR0aD0iMzIiIGhlaWdodD0iMTMiIHJ4PSI2IiBmaWxsPSIjYzhhODRiIiBzdHJva2U9IiM4YTZlMjgiIHN0cm9rZS13aWR0aD0iMS41Ii8+CiAgPHJlY3QgeD0iMTciIHk9IjM1IiB3aWR0aD0iMzAiIGhlaWdodD0iMTEiIHJ4PSI1IiBmaWxsPSIjZThiODRiIiBvcGFjaXR5PSIwLjkiLz4KICA8ZWxsaXBzZSBjeD0iMjYiIGN5PSIzOCIgcng9IjUiIHJ5PSIzIiBmaWxsPSIjZmZlODhhIiBvcGFjaXR5PSIwLjYiLz4KICA8cmVjdCB4PSIxMCIgeT0iMzgiIHdpZHRoPSI2IiBoZWlnaHQ9IjMiIHJ4PSIxLjUiIGZpbGw9IiM4YTZlMjgiLz4KICA8cmVjdCB4PSI0OCIgeT0iMzgiIHdpZHRoPSI2IiBoZWlnaHQ9IjMiIHJ4PSIxLjUiIGZpbGw9IiM4YTZlMjgiLz4KICA8cGF0aCBkPSJNMjUgNDQgUTI3IDQ2IDI5IDQ0IiBzdHJva2U9IiM2YjRjMmEiIHN0cm9rZS13aWR0aD0iMS41IiBmaWxsPSJub25lIiBzdHJva2UtbGluZWNhcD0icm91bmQiLz4KICA8cGF0aCBkPSJNMzUgNDQgUTM3IDQ2IDM5IDQ0IiBzdHJva2U9IiM2YjRjMmEiIHN0cm9rZS13aWR0aD0iMS41IiBmaWxsPSJub25lIiBzdHJva2UtbGluZWNhcD0icm91bmQiLz4KICA8cGF0aCBkPSJNMTQgNDEgTDEwIDQ2IEwxMiA0NiIgc3Ryb2tlPSIjM2E0YTJlIiBzdHJva2Utd2lkdGg9IjEuNSIgZmlsbD0ibm9uZSIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIi8+CiAgPGNpcmNsZSBjeD0iMTIiIGN5PSI0NyIgcj0iMS41IiBmaWxsPSIjM2E0YTJlIi8+Cjwvc3ZnPgo=">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;600;700;800&family=Inter:wght@400;500;600&display=swap"
+        rel="stylesheet">
+    <style>
+        :root {
+            --bg: #171a16;
+            --surface: #1f231d;
+            --border: #2e3329;
+            --brass: #c8a84b;
+            --brass-dim: #8a7232;
+            --text: #ddd8c4;
+            --muted: #7a7868;
+            --danger: #b83c3c;
+            --white: #f0ece0;
+        }
+
+        *,
+        *::before,
+        *::after {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            background: var(--bg);
+            color: var(--text);
+            font-family: 'Inter', sans-serif;
+            font-size: 15px;
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+
+        /* noise overlay */
+        body::before {
+            content: '';
+            position: fixed;
+            inset: 0;
+            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200' height='200'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.75' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='200' height='200' filter='url(%23n)' opacity='0.04'/%3E%3C/svg%3E");
+            pointer-events: none;
+            z-index: 0;
+        }
+
+        .wrap {
+            position: relative;
+            z-index: 1;
+            max-width: 1080px;
+            margin: 0 auto;
+            padding: 0 24px;
+        }
+
+        /* ── HEADER ─────────────────────────────────────── */
+        header {
+            border-bottom: 1px solid var(--border);
+            padding: 18px 0;
+        }
+
+        header .wrap {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .logo {
+            font-family: 'Barlow Condensed', sans-serif;
+            font-weight: 800;
+            font-size: 22px;
+            letter-spacing: 0.04em;
+            color: var(--white);
+        }
+
+        .logo span {
+            color: var(--brass);
+        }
+
+        .header-cta {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            font-size: 13px;
+            color: var(--muted);
+        }
+
+        .header-cta a {
+            color: var(--brass);
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 13px;
+            letter-spacing: 0.03em;
+            border: 1px solid var(--brass-dim);
+            padding: 6px 14px;
+            transition: background .15s;
+        }
+
+        .header-cta a:hover {
+            background: rgba(200, 168, 75, .1);
+        }
+
+        /* ── HERO ────────────────────────────────────────── */
+        .hero {
+            padding: 80px 0 64px;
+            text-align: center;
+            border-bottom: 1px solid var(--border);
+        }
+
+        .hero-eyebrow {
+            font-size: 12px;
+            font-weight: 600;
+            letter-spacing: 0.14em;
+            color: var(--brass);
+            margin-bottom: 28px;
+            display: inline-flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .hero-eyebrow::before,
+        .hero-eyebrow::after {
+            content: '';
+            display: block;
+            width: 32px;
+            height: 1px;
+            background: var(--brass-dim);
+        }
+
+        .hero h1 {
+            font-family: 'Barlow Condensed', sans-serif;
+            font-weight: 800;
+            font-size: clamp(80px, 14vw, 160px);
+            line-height: 0.88;
+            color: var(--white);
+            letter-spacing: -0.02em;
+            margin-bottom: 32px;
+        }
+
+        .hero h1 em {
+            font-style: normal;
+            color: var(--brass);
+            display: block;
+        }
+
+        .hero-desc {
+            color: var(--muted);
+            max-width: 520px;
+            margin: 0 auto 48px;
+            font-size: 15px;
+            line-height: 1.7;
+        }
+
+        .hero-stats {
+            display: flex;
+            justify-content: center;
+            gap: 0;
+        }
+
+        .stat-item {
+            padding: 0 40px;
+            border-right: 1px solid var(--border);
+        }
+
+        .stat-item:last-child {
+            border-right: none;
+        }
+
+        .stat-num {
+            font-family: 'Barlow Condensed', sans-serif;
+            font-size: 32px;
+            font-weight: 700;
+            color: var(--white);
+            line-height: 1;
+        }
+
+        .stat-label {
+            font-size: 11px;
+            color: var(--muted);
+            margin-top: 5px;
+            letter-spacing: 0.05em;
+        }
+
+        /* ── PRODUCTS ────────────────────────────────────── */
+        .products-section {
+            padding: 72px 0;
+        }
+
+        .section-label {
+            font-size: 11px;
+            font-weight: 600;
+            letter-spacing: 0.14em;
+            color: var(--muted);
+            margin-bottom: 36px;
+            text-transform: uppercase;
+        }
+
+        .products-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 2px;
+        }
+
+        .product-slot {
+            background: var(--surface);
+            padding: 36px;
+            position: relative;
+            overflow: hidden;
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity .5s ease, transform .5s ease;
+        }
+
+        .product-slot.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .product-slot:last-child {
+            transition-delay: .12s;
+        }
+
+        .product-slot::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 2px;
+            background: linear-gradient(90deg, var(--brass), transparent);
+        }
+
+        .slot-index {
+            font-family: 'Barlow Condensed', sans-serif;
+            font-size: 11px;
+            font-weight: 700;
+            letter-spacing: 0.16em;
+            color: var(--brass-dim);
+            margin-bottom: 24px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .slot-index::after {
+            content: '';
+            flex: 1;
+            height: 1px;
+            background: var(--border);
+        }
+
+        .product-name {
+            font-family: 'Barlow Condensed', sans-serif;
+            font-size: 28px;
+            font-weight: 800;
+            color: var(--white);
+            line-height: 1.1;
+            margin-bottom: 20px;
+            letter-spacing: 0.01em;
+        }
+
+        .product-features {
+            list-style: none;
+            margin-bottom: 28px;
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+        }
+
+        .product-features li {
+            font-size: 13px;
+            color: var(--muted);
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .product-features li::before {
+            content: '—';
+            color: var(--brass-dim);
+            flex-shrink: 0;
+        }
+
+        .product-keys {
+            background: rgba(0, 0, 0, .3);
+            border: 1px solid var(--border);
+            padding: 16px 20px;
+            margin-bottom: 28px;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        .key-row {
+            display: flex;
+            align-items: baseline;
+            justify-content: space-between;
+            gap: 12px;
+        }
+
+        .key-label {
+            font-size: 11px;
+            color: var(--muted);
+            letter-spacing: 0.06em;
+            flex-shrink: 0;
+        }
+
+        .key-value {
+            font-family: 'Barlow Condensed', sans-serif;
+            font-size: 16px;
+            font-weight: 700;
+            color: var(--brass);
+            letter-spacing: 0.06em;
+            text-align: right;
+        }
+
+        .product-price {
+            font-family: 'Barlow Condensed', sans-serif;
+            font-size: 42px;
+            font-weight: 800;
+            color: var(--white);
+            line-height: 1;
+            margin-bottom: 24px;
+        }
+
+        .product-price small {
+            font-size: 16px;
+            font-weight: 400;
+            color: var(--muted);
+            margin-left: 4px;
+        }
+
+        .btn-buy {
+            display: block;
+            width: 100%;
+            padding: 14px 24px;
+            background: var(--brass);
+            color: #0f1209;
+            font-family: 'Barlow Condensed', sans-serif;
+            font-size: 17px;
+            font-weight: 800;
+            letter-spacing: 0.06em;
+            text-align: center;
+            text-decoration: none;
+            border: none;
+            cursor: pointer;
+            transition: background .12s;
+            clip-path: polygon(0 0, calc(100% - 10px) 0, 100% 10px, 100% 100%, 10px 100%, 0 calc(100% - 10px));
+        }
+
+        .btn-buy:hover {
+            background: #d9b854;
+        }
+
+        /* ── HOW IT WORKS ────────────────────────────────── */
+        .how-section {
+            border-top: 1px solid var(--border);
+            padding: 72px 0;
+        }
+
+        .how-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 2px;
+            margin-top: 36px;
+        }
+
+        .how-step {
+            background: var(--surface);
+            padding: 28px 24px;
+        }
+
+        .step-num {
+            font-family: 'Barlow Condensed', sans-serif;
+            font-size: 48px;
+            font-weight: 800;
+            color: var(--border);
+            line-height: 1;
+            margin-bottom: 16px;
+        }
+
+        .step-title {
+            font-size: 14px;
+            font-weight: 600;
+            color: var(--white);
+            margin-bottom: 8px;
+        }
+
+        .step-desc {
+            font-size: 12px;
+            color: var(--muted);
+            line-height: 1.6;
+        }
+
+        /* ── FOOTER ──────────────────────────────────────── */
+        footer {
+            border-top: 1px solid var(--border);
+            padding: 40px 0;
+        }
+
+        footer .wrap {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 24px;
+        }
+
+        .footer-left {
+            font-size: 13px;
+            color: var(--muted);
+        }
+
+        .footer-tg {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            color: var(--brass);
+            text-decoration: none;
+            font-size: 14px;
+            font-weight: 600;
+        }
+
+        .footer-tg svg {
+            width: 20px;
+            height: 20px;
+            fill: currentColor;
+        }
+
+        /* ── RESPONSIVE ──────────────────────────────────── */
+        @media (max-width: 720px) {
+            .hero {
+                padding: 48px 0 40px;
+            }
+
+            .hero-stats {
+                gap: 0;
+            }
+
+            .stat-item {
+                padding: 0 20px;
+            }
+
+            .products-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .how-grid {
+                grid-template-columns: 1fr 1fr;
+            }
+
+            footer .wrap {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+        }
+
+        @media (prefers-reduced-motion: reduce) {
+            .product-slot {
+                opacity: 1;
+                transform: none;
+                transition: none;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header>
+        <div class="wrap">
+            <div class="logo">ONE<span>SHOT</span></div>
+            <div class="header-cta">
+                <span>Hỗ trợ 24/7</span>
+                <a href="https://t.me/df_oneshot_bot">Mua tại đây →</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- HERO -->
+    <section class="hero">
+        <div class="wrap">
+            <div class="hero-eyebrow">Delta Force Mobile - Công cụ hỗ trợ</div>
+            <h1>HACK<em>DFM</em></h1>
+            <p class="hero-desc">Hai phiên bản với tính năng khác nhau. Aimbot, ESP, no-recoil - cài đặt trong 5 phút,
+                chạy ổn định trên hầu hết thiết bị Android.</p>
+            <div class="hero-stats">
+                <div class="stat-item">
+                    <div class="stat-num">2</div>
+                    <div class="stat-label">Phiên bản</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-num">Android</div>
+                    <div class="stat-label">Nền tảng hỗ trợ</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-num">5 phút</div>
+                    <div class="stat-label">Thời gian cài đặt</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PRODUCTS -->
+    <section class="products-section">
+        <div class="wrap">
+            <div class="section-label">Chọn phiên bản</div>
+            <div class="products-grid">
+
+                <!-- A1 -->
+                <div class="product-slot" id="slot-a1">
+                    <div class="slot-index">LOADOUT 01</div>
+                    <div class="product-name">BẢN DELTA FORCE<br>A1</div>
+                    <ul class="product-features">
+                        <li>Aimbot tự động khóa đầu</li>
+                        <li>ESP wallhack xuyên tường</li>
+                        <li>No-recoil toàn bộ súng</li>
+                        <li>Hỗ trợ Android 9 trở lên</li>
+                    </ul>
+                    <div class="product-keys">
+                        <div class="key-row">
+                            <span class="key-label">Key kích hoạt</span>
+                            <span class="key-value">A1-Kyu</span>
+                        </div>
+                    </div>
+                    <div class="product-price">Liên hệ<small>/giá</small></div>
+                    <a href="https://t.me/df_oneshot_bot" class="btn-buy">MUA QUA TELEGRAM</a>
+                </div>
+
+                <!-- B2 -->
+                <div class="product-slot" id="slot-b2">
+                    <div class="slot-index">LOADOUT 02</div>
+                    <div class="product-name">DELTA BẢN B2<br>VIỆT HÓA FIX</div>
+                    <ul class="product-features">
+                        <li>Việt hóa toàn bộ giao diện</li>
+                        <li>Fix lỗi phiên bản quốc tế</li>
+                        <li>Aimbot + ESP + radar mini</li>
+                        <li>File nén có mật khẩu bảo vệ</li>
+                    </ul>
+                    <div class="product-keys">
+                        <div class="key-row">
+                            <span class="key-label">Pass giải nén</span>
+                            <span class="key-value">deltaforce_box</span>
+                        </div>
+                        <div class="key-row">
+                            <span class="key-label">Key kích hoạt</span>
+                            <span class="key-value">B2-Kyudzai</span>
+                        </div>
+                    </div>
+                    <div class="product-price">Liên hệ<small>/giá</small></div>
+                    <a href="https://t.me/df_oneshot_bot" class="btn-buy">MUA QUA TELEGRAM</a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- HOW IT WORKS -->
+    <section class="how-section">
+        <div class="wrap">
+            <div class="section-label">Quy trình</div>
+            <div class="how-grid">
+                <div class="how-step">
+                    <div class="step-num">01</div>
+                    <div class="step-title">Nhắn bot Telegram</div>
+                    <div class="step-desc">Truy cập @df_oneshot_bot, chọn sản phẩm muốn mua.</div>
+                </div>
+                <div class="how-step">
+                    <div class="step-num">02</div>
+                    <div class="step-title">Thanh toán ZaloPay</div>
+                    <div class="step-desc">Quét QR, chuyển khoản, ghi nội dung theo yêu cầu.</div>
+                </div>
+                <div class="how-step">
+                    <div class="step-num">03</div>
+                    <div class="step-title">Nhận file tự động</div>
+                    <div class="step-desc">Admin xác nhận, bot giao file trực tiếp trong vòng 15 phút.</div>
+                </div>
+                <div class="how-step">
+                    <div class="step-num">04</div>
+                    <div class="step-title">Cài & chơi</div>
+                    <div class="step-desc">Giải nén, nhập key kích hoạt, khởi động game.</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="wrap">
+            <div class="footer-left">
+                © 2026 OneShot Shop - Chỉ hỗ trợ Delta Force Mobile
+            </div>
+            <a href="https://t.me/df_oneshot_bot" class="footer-tg">
+                <svg viewBox="0 0 24 24">
+                    <path
+                        d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm5.894 8.221-1.97 9.28c-.145.658-.537.818-1.084.508l-3-2.21-1.447 1.394c-.16.16-.295.295-.605.295l.213-3.053 5.56-5.023c.242-.213-.054-.333-.373-.12L7.21 13.981l-2.96-.924c-.643-.204-.657-.643.136-.953l11.57-4.461c.537-.194 1.006.131.938.578z" />
+                </svg>
+                @df_oneshot_bot
+            </a>
+        </div>
+    </footer>
+
+    <script>
+        // Scroll reveal cho product slots
+        const slots = document.querySelectorAll('.product-slot');
+        const observer = new IntersectionObserver(entries => {
+            entries.forEach(e => {
+                if (e.isIntersecting) {
+                    e.target.classList.add('visible');
+                    observer.unobserve(e.target);
+                }
+            });
+        }, { threshold: 0.15 });
+        slots.forEach(s => observer.observe(s));
+    </script>
+</body>
+
+</html>
